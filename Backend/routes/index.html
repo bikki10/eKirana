@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to the Bookify Backend</h1>
+    <div>
+        <h1>Product Info</h1>
+        <form action="/api/v1/products/submitted" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <br>
+            <label for="iamge">Image URL</label>
+            <input type="text" name="image">
+            <br>
+            <label for="countInStock">Count In Stock</label>
+            <input type="number" name="countInStock">
+            <br>
+            <label for="price">Price</label>
+            <input type="number" name="price">
+            <br>
+            <label for="description">Description</label>
+            <input type="text" name="description">
+            <br>
+            <label for="richDescription">richDescription</label>
+            <input type="text" name="richDescription">
+            <br>
+            <label for="author">Author</label>
+            <input type="text" name="author">
+            <br>
+
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+    <div>
+        <h1>Category Info</h1>
+        <form action="/api/v1/category/submitted" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <br>
+            <label for="icon">Icon</label>
+            <input type="text" name="icon">
+            <br>
+            <label for="color">Color</label>
+            <input type="text" name="color">
+            <br>
+
+            <br>
+
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
